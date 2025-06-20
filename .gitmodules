@@ -1,0 +1,3 @@
+[submodule "mmseg"]
+	path = mmseg
+	url = git@github.com:arianizadi/mmsegmentation.git

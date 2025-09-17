@@ -1,3 +1,3 @@
 # Notes on Railsegmentation Research
 
-[MMSegmentation Setup Guide](/mmsegmentation/Setup.md) - How to install
+[MMSegmentation Setup Guide](/Setup.md) - How to install

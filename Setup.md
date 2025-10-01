@@ -19,7 +19,7 @@ If you're new to MMSeg or machine learning tooling, this guide will walk you thr
 ### 1. Create a Python Environment
 This isolates your setup from other projects.
 ```bash
-conda create -n openmmlab python=3.9 -y
+conda create -n openmmlab python=3.8 -y
 conda activate openmmlab
 ```
 
@@ -37,9 +37,10 @@ pip install mmcv==2.1.0 \
   -f https://download.openmmlab.com/mmcv/dist/cu121/torch2.1/index.html
 ```
 
-### 4. Install MMSegmentation
+### 4. Install MMSegmentation (Clone my mmseg repo or the official)
 ```bash
-pip install mmsegmentation
+pip install -r requirements.txt
+pip install -ve .
 ```
 
 ---
@@ -50,6 +51,7 @@ We’ll run a pre-trained model on a sample image to ensure everything is workin
 ### Step 1: Download Model Files
 Use `mim` (OpenMMLab installer) to grab a model config and pretrained weights.
 ```bash
+pip install -U openmim
 mim download mmsegmentation \
   --config pspnet_r50-d8_4xb2-40k_cityscapes-512x1024 \
   --dest .
